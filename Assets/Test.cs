@@ -35,6 +35,26 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		//define array
+		int[] points = new int[5];
+
+		//initialization of array
+		points [0] = 30;
+		points [1] = 20;
+		points [2] = 50;
+		points [3] = 10;
+		points [4] = 80;
+			
+		//disp all
+		for (int i = 0; i < 5; i++) {
+			Debug.Log (points [i]);
+		}
+		//disp all reverse order
+		for (int i = 4; i >= 0; i--) {
+			Debug.Log (points [i]);
+		}
+
 		// Bossクラスの変数を宣言してインスタンスを代入
 		Boss lastboss = new Boss ();
 
